@@ -1,0 +1,21 @@
+{
+  "nombreApp": "Components",
+
+  "routes": [
+    {
+      "route": "alert",
+      "icon": "add_alert",
+      "text": "Alertas"
+    },
+    {
+      "route": "avatar",
+      "icon": "accesibility",
+      "text": "Avatars"
+    },
+    {
+      "route": "card",
+      "icon": "folder_open",
+      "text": "Cards - Targetas"
+    }
+  ]
+}
