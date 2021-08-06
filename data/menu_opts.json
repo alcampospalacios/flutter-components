@@ -16,6 +16,16 @@
       "route": "card",
       "icon": "folder_open",
       "text": "Cards - Targetas"
+    },
+    {
+      "route": "custom-alert",
+      "icon": "add_alert",
+      "text": "Cool Alert"
+    },
+    {
+      "route": "animated-container",
+      "icon": "donut_large",
+      "text": "Animated Container"
     }
   ]
 }
