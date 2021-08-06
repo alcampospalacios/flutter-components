@@ -26,6 +26,11 @@
       "route": "animated-container",
       "icon": "donut_large",
       "text": "Animated Container"
+    },
+    {
+      "route": "inputs",
+      "icon": "input",
+      "text": "Input"
     }
   ]
 }

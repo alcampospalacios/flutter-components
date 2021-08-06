@@ -1,4 +1,5 @@
 import 'package:calculator/src/pages/state-full/animated-container-page.dart';
+import 'package:calculator/src/pages/state-full/input-page.dart';
 import 'package:calculator/src/pages/state-less/avatar-page.dart';
 import 'package:calculator/src/pages/state-less/car-page.dart';
 import 'package:calculator/src/pages/state-less/cool-alert.dart';
@@ -15,6 +16,7 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
         CustomAlertPage(title: 'Cool Alert'),
     'avatar': (BuildContext context) => AvatarPage(),
     'card': (BuildContext context) => CardPage(),
-    'animated-container': (BuildContext context) => AnimatedContainerPage()
+    'animated-container': (BuildContext context) => AnimatedContainerPage(),
+    'inputs': (BuildContext context) => InputPage()
   };
 }
