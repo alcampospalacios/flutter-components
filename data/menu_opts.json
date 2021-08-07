@@ -36,6 +36,11 @@
       "route": "slider",
       "icon": "tune",
       "text": "Slider"
+    },
+    {
+      "route": "list",
+      "icon": "list",
+      "text": "Listas"
     }
   ]
 }

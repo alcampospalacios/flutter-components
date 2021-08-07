@@ -1,5 +1,6 @@
 import 'package:calculator/src/pages/state-full/animated-container-page.dart';
 import 'package:calculator/src/pages/state-full/input-page.dart';
+import 'package:calculator/src/pages/state-full/list-page.dart';
 import 'package:calculator/src/pages/state-full/slider-page.dart';
 import 'package:calculator/src/pages/state-less/avatar-page.dart';
 import 'package:calculator/src/pages/state-less/car-page.dart';
@@ -19,6 +20,7 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
     'card': (BuildContext context) => CardPage(),
     'animated-container': (BuildContext context) => AnimatedContainerPage(),
     'inputs': (BuildContext context) => InputPage(),
-    'slider': (BuildContext context) => SliderPage()
+    'slider': (BuildContext context) => SliderPage(),
+    'list': (BuildContext context) => ListPage()
   };
 }
