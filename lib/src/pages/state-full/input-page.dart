@@ -13,6 +13,8 @@ class _InputPageState extends State<InputPage> {
   String _password = '';
   String _date = '';
 
+  String _selectedPower = 'overpower';
+
   TextEditingController _inputDateController = new TextEditingController();
 
   @override
@@ -31,6 +33,8 @@ class _InputPageState extends State<InputPage> {
           _passwordInput(),
           Divider(),
           _createDateInput(context),
+          Divider(),
+          _createDropDow(),
           Divider(),
           _newWidget(),
         ],
@@ -110,12 +114,44 @@ class _InputPageState extends State<InputPage> {
     );
   }
 
+  Widget _createDropDow() {
+    List<String> _powers = ['X light', 'overpower', 'strongest man', 'super'];
+
+    List<DropdownMenuItem<String>> _listDrop = [];
+
+    _powers.forEach((element) {
+      _listDrop.add(DropdownMenuItem(
+        child: Text(element),
+        value: element,
+      ));
+    });
+
+    return Row(
+      children: [
+        Icon(Icons.select_all),
+        SizedBox(width: 30.0),
+        Expanded(
+          child: DropdownButton(
+            value: _selectedPower,
+            items: _listDrop,
+            onChanged: (elem) {
+              setState(() {
+                _selectedPower = elem.toString();
+              });
+            },
+          ),
+        )
+      ],
+    );
+  }
+
   void _selecDate(BuildContext context) async {
     DateTime? picked = await showDatePicker(
         context: context,
         initialDate: new DateTime.now(),
         firstDate: new DateTime(2000),
-        lastDate: new DateTime(2022));
+        lastDate: new DateTime(2022),
+        locale: Locale('es', 'ES'));
 
     _date = picked.toString();
     _inputDateController.text = _date;
